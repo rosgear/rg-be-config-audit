@@ -1,0 +1,40 @@
+<?php
+/**
+ * Страница "Форма настройки аудита".
+ * 
+ * Английская (британская) локализация.
+ * 
+ * Этот файл является частью расширения модуля веб-приложения RosGear.
+ * 
+ * @copyright Copyright (c) 2015 RosGear
+ * @license https://rosgear.ru/license/
+ */
+?>
+<article>
+    <h1>Audit setting form</h1>
+    <div class="g-help-screen g-help-screen--hidable">
+        <img src="<?= $assetsUrl, '/help/form.png' ?>" />
+    </div>
+    <p>The form for setting the date and time can be called from:</p>
+    <ul>
+        <li>web application configuration panel;</li>
+        <li>"Configuration / Logging and errors / Audit setting" partition bar;</li>
+        <li>start, item "Configuration".</li>
+    </ul>
+    <h2>Form fields</h2>
+    <ul class="g-help-list">
+        <li><span class="g-help-fld g-help-fld_combo"></span> <b>Records storage.</b> Storage type for storing audit records <em>(default is "Database")</em>;</li>
+        <li><span class="g-help-fld g-help-fld_spinner"></span> <b>Maximum number of records.</b> Number of records the storage can hold <em>(default "1000")</em>;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Audit service enabled.</b> Documentation of operations performed by the user is performed if the flag is set.</li>
+    </ul>
+
+    <h3>Набор полей "Аудит может включать информацию"</h3>
+    <ul class="g-help-list">
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>User information.</b> Documentation of operations performed by the user contains information about the user if the flag is set;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Request controller information.</b> Documentation of operations performed by the user contains information about the request controller if the flag is set;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Request module information.</b> Documentation of operations performed by the user contains information about the request module if the flag is set;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Information about request parameters.</b> Documentation of operations performed by the user contains information about the request parameters if the flag is set;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>User device information.</b> Documentation of operations performed by the user contains information about the user's device if the flag is set;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Reset settings.</b> Resets all settings to default values ​​if the flag is set (only after pressing the "Save" button).</li>
+    </ul>
+</article>
